@@ -1,0 +1,302 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f5;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav {
+    font-size: 46px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 1em;
+}
+
+#menu {
+    padding: 1em;
+}
+
+.titles {
+    background: linear-gradient(135deg, #72edf2 10%, #5151e5 100%);
+    color: white;
+    padding: 2em;
+    text-align: center;
+}
+
+.titles a {
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    background-color: #ff4f5a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+section h2 {
+    font-size: 1.5em;
+    margin-top: 1em;
+    color: #333;
+}
+
+form input[type="text"] {
+    padding: 0.5em;
+    width: 60%;
+    margin-right: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    padding: 0.5em 1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.game-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.card {
+    width: 30%;
+    min-width: 250px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.3s ease;
+    margin: 0 auto;
+}
+
+.card img:hover {
+    transform: scale(1.1); 
+}
+
+#reseñas {
+    margin-top: 2em;
+    padding: 1em;
+    text-align: center;
+    background-color: #eef2f5;
+}
+
+.reseñas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.reseñas-grid p {
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0.5em;
+}
+
+#contacto {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #f7f9fc;
+}
+
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 500px;
+}
+
+#contacto label {
+    font-weight: bold;
+}
+
+#contacto input, #contacto textarea {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#contacto button {
+    padding: 0.5em 1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+.descripcion-inline {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        font-size: 24px;
+    }
+
+    .titles {
+        padding: 1em;
+        font-size: 1.2em;
+    }
+
+    .game-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    #contacto form {
+        width: 100%;
+        padding: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .card img {
+        width: 90%;
+    }
+
+    .titles {
+        padding: 0.5em;
+    }
+
+    footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer a {
+        margin: 0.5em 0;
+    }
+
+    .reseñas-grid {
+        grid-template-columns: 1fr;
+    }
+}
+#descripcion-ampliada {
+    margin-top: 1em;
+    padding: 1em;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+    font-size: 16px;
+    width: 90%;
+    max-width: 500px;
+}
+
+
+
+
+#api-section {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #f7f9fc;
+    text-align: center;
+  }
+  
+  #fetch-api-btn {
+    padding: 0.5em 1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .api-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+  }
+  
+  .api-card {
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+  }
+  
+  .api-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
